@@ -1,0 +1,62 @@
+img { 
+  width: 1300px; 
+  max-width: 100%;
+  display: block;
+ 
+ }
+
+div { 
+  background-color: rgb(255, 233, 242);
+  width: 100%;
+  border: 5px outset red;
+}
+
+.leivonnaiset {color: aquamarine;}
+
+p {font-family: Arial, Helvetica, sans-serif}
+
+.fancy {color: rgb(255, 0, 153)}
+body {margin:auto; max-width: 900px;}
+body {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 199, 230);
+  }
+  
+  h1 {
+    color: #ff0000;
+    background-color: transparent;
+  }
+  
+  p {
+    color: #000000;
+    background-color: transparent;
+  }
+  
+  strong {
+    color: black;
+  }
+
+  #kissa:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+
+
+  #nappi:hover {
+    background-color: #f3b0ed;
+    font-size: 16px;
+    color: black;
+  }
+#nappi {
+  object-position: right;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+margin-bottom: 5px;
+margin-top: 5px;
+background-color: rgb(49, 99, 55);
+position: relative;
+color: rgb(255, 255, 255);
+
+}
