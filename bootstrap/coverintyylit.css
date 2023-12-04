@@ -5,12 +5,10 @@ html {
 
 
 
-.header {
-    size: 56px;
-}
+
 
 body {
-    background-color: rgb(204, 160, 160);
+    background-color: rgb(0, 0, 0);
     margin: 3em;
   }
   .card:hover {
@@ -19,6 +17,7 @@ body {
   .card {
     transition: transform 0.5s;
     background-color: black;
+    margin: 10px;
   }
   
  
@@ -98,6 +97,8 @@ body {
       font-size: 0.7rem;
     }
   }
+
+  
 
 
 
@@ -188,10 +189,10 @@ body {
     position: absolute;
     bottom:50px;
     right:5px;
-    width:50px;
-    height: 70px;
+    width:89px;
+    height: 94px;
     content:'';
-    background-image: url(/järvenpääntähdet.jpg);
+    background-image: url(/astronaut.png);
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 1;
@@ -199,13 +200,13 @@ body {
 }
 .content::after{
     position: absolute;
-    bottom:0px;
+    bottom:33px;
     right:0px;
     transform: translate(70%,50%);
     width:200px;
     height: 150px;
     content:'';
-    background-image: url(/kuumailmapallo.jpg);
+    background-image: url(/vihreeplaneetta.png);
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 1;
@@ -228,6 +229,7 @@ body {
 
 
 
+/* NAPPI */
 
 
 
