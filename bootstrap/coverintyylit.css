@@ -192,7 +192,7 @@ body {
     width:89px;
     height: 94px;
     content:'';
-    background-image: url(/astronaut.png);
+    background-image: url(astronaut.png);
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 1;
@@ -206,7 +206,7 @@ body {
     width:200px;
     height: 150px;
     content:'';
-    background-image: url(/vihreeplaneetta.png);
+    background-image: url(vihreeplaneetta.png);
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 1;
