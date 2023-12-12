@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,900&family=Alegreya+Sans:wght@800&family=Montserrat:wght@700&family=Mukta+Vaani&family=Work+Sans&family=Yeseva+One&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link href="tyylit_etusivulle.css" rel="stylesheet">
+    
+    <title>Taiteen Tähtipolku</title>
+  </head>
+
+  <body>
+ <!-- NAV - Header Menu linkit ovat tässä -->
+ 
+    <nav>
+      <div class="container">
+        
+        <nav class="d-flex justify-content-center py-3 fixed-top bg-black">
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/etusivu.html" class="nav-link active" style="background-color: #2f144c; color: white;" aria-current="page">Etusivu</a></li>
+            <li class="nav-item"><a href="/bootstrap/bootstrap.html"  class="nav-link text-white">Bootstrap-sivu</a></li>
+            <li class="nav-item"><a href="/osaaminen/osaaminen.html" class="nav-link text-white">Osaaminen</a></li>
+            <li class="nav-item"><a href="/yhteys/yhteys.html" class="nav-link text-white ">Ota Yhteyttä</a></li>
+          </ul>
+        </nav>
+      </div>
+  
+    </nav>
+
+    
+    <video autoplay muted loop id="myVideo">
+      <source src="fisut.mp4" type="video/mp4">
+    </video>
+
+
+
+    
+    <!-- MAIN -->
+    <main>
+     <!--  HEADER -->
+      <!-- kuvakaruselliosio HEADER
+      ================================================== -->
+    
+      <header id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="" aria-current="true"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="1_pallot.png" class="img-fluid" width="100%" height="100%">
+            <div class="container">
+              <div class="carousel-caption text-start">
+                          <!-- taiteen tähtipolku otsikko karuselli kuvan päälle -->
+                         
+        <div class="container">
+          
+          <div class="row">
+            <div class="col-12">
+                <div class="text-center text-white"  style="margin-bottom: 15rem; margin-top: 10rem; font-size: 100px; font-family: 'Alegreya Sans SC', sans-serif;">
+                    <h2 style="font-family: 'Mukta Vaani', sans-serif;">07B - Nettisivuprojekti</h2>
+                    <header style="line-height: 1.2; font-size: 110px;">Tai&shy;teen tähti&shy;polku</header> 
+                       
+                </div>        
+            </div>
+          </div>
+     
+        </div>
+        
+                
+          
+              </div>
+            </div>
+          </div>
+           <!-- loppu-->
+
+          <div class="carousel-item">
+            <img src="2_pallot.png" class="img-fluid" width="100%" height="100%"><div class="container">
+              <div class="carousel-caption">
+                <h1>Taiteen valtakunta</h1>
+                <p>Kurkista Taiteen valtakuntaan, jossa luovuudella ei ole rajoja.</p>
+                <style>
+                  .custom-btn {
+                    background-color: #2f144c;
+                    color: white;
+                  }
+                
+                  .custom-btn:hover {
+                    background-color: gray; /* Harmaa väri hiiren ollessa päällä */
+                  }
+                </style>
+                
+                <p><a class="btn btn-lg custom-btn" href="/bootstrap/bootstrap.html">Katso lisää</a></p>
+
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <img src="3_pallot.png" class="img-fluid" width="100%" height="100%"> <div class="container">
+              <style>
+                .custom-btn {
+                  background-color: #2f144c;
+                  color: white;
+                }
+              
+                .custom-btn:hover {
+                  background-color: gray; /* Harmaa väri hiiren ollessa päällä */
+                }
+              </style>
+              
+              <div class="carousel-caption text-end">
+                <h1>Tutustu osaamiseeni</h1>
+                <p>Alla olevasta linkistä löydät gallerian.</p>
+                
+                <p><a class="btn btn-lg custom-btn" href="/osaaminen/osaaminen.html">Lue lisää</a></p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Edellinen</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Seuraava</span>
+        </button>
+      </header>
+    
+    <!-- kuvakaruselli-osion loppu-->
+   
+  
+    <br><br>
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+    
+      <div class="container marketing bg-black p-4"  style="opacity: 0.8;" >
+
+        <div class="bg-black p-4" style="color: rgb(255, 255, 255)">
+        
+          
+        <!-- TÄÄLLÄ ON SECTION & ARTICLE -->
+
+        <section class="row text-center" >
+          <article class="col-lg-4 mb-4" >
+          
+              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+              <h2 class="fw-normal">Nav (header) on 1:nen osio</h2>
+              <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+              <p><a class="btn btn-secondary" href="#">Katso linkki »</a></p>
+            
+          </article>
+          <article class="col-lg-4 mb-4">
+            
+              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+              <h2 class="fw-normal">Karuselli (header) on 2 osio</h2>
+              <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+              <p><a class="btn btn-secondary" href="#">Katso linkki »</a></p>
+           
+          </article>
+          <article class="col-lg-4 mb-4">
+            
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+            <h2 class="fw-normal">Tämä on (section) 3 osio</h2>
+              <p>And lastly this, the third column of representative placeholder content.</p>
+              <p><a class="btn btn-secondary" href="#">Katso linkki »</a></p>
+           
+          </article>
+        </section>
+        
+    
+    
+        <!-- START THE FEATURETTES -->
+    
+        <hr class="featurette-divider">
+    <!-- SECTION, ARTICLE & FIGURE -->
+        <section class="row featurette p-4">
+          <article class="col-md-7">
+            <h1 style="font-size: 50px; font-family: 'Alegreya Sans SC', sans-serif;"><br>Etusivu (4 osio) - pääotsikko</h1>
+            <p style="font-size: 17px; font-family: 'Work Sans', sans-serif;">
+              <a href="https://www.stockmann.com/">Tutustu Stockmanniin tästä</a>  is simply dummy text of the printing and typesetting industry. 
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                  when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+                  <h3 style="font-size: 28px; font-family:'Alegreya Sans', sans-serif;">Alaotsikko 1/6</h3>
+
+                <p style="font-size: 17px; font-family: 'Work Sans', sans-serif;">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                  when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+                  <h3 style="font-size: 28px; font-family:'Alegreya Sans', sans-serif;">Alaotsikko 2/6</h3>
+
+                  <p style="font-size: 17px; font-family: 'Work Sans', sans-serif;">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                
+                <strong="lead"> Sivun elementit. Sivulla tulee olla vähintään 
+                    <li>6+ alaotsikkoa ja </li>
+                    <li> 3+ kuvaa, </li>
+                    <li> valikko (linkki projektin Bootstrap-osioon ja joitakin muita linkkejä),</li>
+                    <li> useita muita painikkeita tai linkkejä (valikon lisäksi) </li>
+                    <li> ja vähintään 100 sanaa tekstiä (saa olla täytetekstiä, jaa fiksusti kappaleisiin eli p-tageihin).</li>
+                    <li> Lisää myös muita haluamiasi elementtejä.</li>
+                </strong>
+          </article>
+            <figure class="col-md-5 d-flex align-items-center mx-auto">
+            <img class="img-fluid" src="stockmann.jpg" alt="Kuva" width="500" height="500">
+            </figure>
+
+        </section>
+    
+        <hr class="featurette-divider">
+    
+        <section class="row featurette p-4">
+          <article class="col-md-7 order-md-2">
+            <h1 style="font-size: 50px; font-family: 'Alegreya Sans SC', sans-serif;">Etusivun tehtävät - pääotsikko 2</h1>
+            <p style="font-size: 17px; font-family: 'Work Sans', sans-serif;">
+              <a href="https://www.tokmanni.fi/">Tutustu tokmanniin tästä</a> <b><-- joitaikin linkkejä</b> is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <h3 style="font-size: 28px; font-family:'Alegreya Sans', sans-serif;">Alaotsikko 3/6</h3>
+
+              <p style="font-size: 17px; font-family: 'Work Sans', sans-serif;">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+              <h3 style="font-size: 28px; font-family:'Alegreya Sans', sans-serif;">Alaotsikko 4/6</h3>
+
+              <p style="font-size: 17px; font-family: 'Work Sans', sans-serif;">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </article>
+          <figure class="col-md-5 d-flex align-items-center mx-auto">
+            <img class="img-fluid mx-auto" src="tokmanni.jpg" width="500" height="500">
+          </figure>
+        </section>
+    
+      
+        <hr class="featurette-divider">
+    
+        <section class="row featurette p-4">
+          <div class="col-md-7">
+            <h1 style="font-size: 50px; font-family: 'Alegreya Sans SC', sans-serif;">Etusivun tehtävät - pääotsikko 3</h1>
+            <p style="font-size: 17px; font-family: 'Work Sans', sans-serif;">
+              <a href="https://www.verkkokauppa.com/fi/etusivu">Tutustu verkkokauppaan tästä</a> is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <h3 style="font-size: 28px; font-family:'Alegreya Sans', sans-serif;">Alaotsikko 5/6</h3>
+              <p style="font-size: 17px; font-family: 'Work Sans', sans-serif;">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <h3 style="font-size: 28px; font-family:'Alegreya Sans', sans-serif;">Alaotsikko 6/6</h3>
+              <p style="font-size: 17px; font-family: 'Work Sans', sans-serif;">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>  
+        <figure class="col-md-5 d-flex align-items-center mx-auto">
+            <img class="img-fluid mx-auto" src="verkkokauppa.jpg" width="500" height="500">
+        </figure>
+        </section>
+    
+        <hr class="featurette-divider">
+   </div> <!-- tää on mustan taustan loppu -->
+   
+        <!-- /END THE FEATURETTES -->
+    
+      </div><!-- /.container -->
+
+
+   <!-- tää on se 5 osio-->
+      
+ 
+    <div class="jumbotron jumbotron-fluid" style="margin-top: 200px;">
+      <aside class="container"  >
+        <h1 style="color: rgb(255, 255, 255); text-align: center; font-size: 50px; font-family: 'Alegreya Sans SC', sans-serif;">Jumbotron on 5:viides osio</h1>
+        <p style="color: white; text-align: center; font-size: 22px; font-family: 'Work Sans', sans-serif;">Tästä jumbotronista pääset rusta.com sivustolle</p>
+        <br>
+        <br>
+        <div class="row align-items-md-stretch" >
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-light border rounded-3" style="margin:15px; box-shadow: rgba(255, 255, 255, 0.848) 0px 54px 55px, rgba(255, 255, 255, 0.839) 0px -12px 30px, rgba(255, 255, 255, 0.838) 0px 4px 6px, rgba(255, 255, 255, 0.838) 0px 12px 13px, rgba(255, 255, 255, 0.822) 0px -3px 5px;">
+            
+              <h3 style="font-size: 28px; font-family:'Alegreya Sans', sans-serif;">CSS tekniikkaa</h3>
+              <p style="font-size: 17px; font-family: 'Work Sans', sans-serif;">
+                tähän on nyt lisätty box-shadow, forms. puuttuu transition, backgropund image ja flexbox, animaatio noh ja kai gradient, sitten jotan väriliukua yms.</p>
+                <p style="font-size: 17px; font-family: 'Work Sans', sans-serif;">
+                   Olisipa hienoa jos ristinolla toimisi oikeasti!</p>
+              <a class="btn btn-outline-dark" style="margin-bottom: 1rem;" type="button" href="https://playtictactoe.org/">Siirry peliin</a>
+              
+          
+               <!-- GRID -->
+               <grid class="grid-container" style="padding: 20px; margin-top: 40px; margin-left:40px; margin-right: 40px;">
+                  <div class="grid-item">X</div>
+                  <div class="grid-item">O</div>
+                  <div class="grid-item">O</div>
+                  <div class="grid-item">X</div>
+                  <div class="grid-item">X</div>
+                  <div class="grid-item">O</div>
+                  <div class="grid-item">X</div>
+                  <div class="grid-item">O</div>
+                  <div class="grid-item">X</div>
+               </grid>
+            </div>
+          </div>
+          <form class="col-md-6">
+            <div class="h-100 p-5 bg-light border rounded-3" style="margin:15px; box-shadow: rgb(255, 255, 255) 0px 54px 55px, rgb(255, 255, 255) 0px -12px 30px, rgb(255, 255, 255) 0px 4px 6px, rgb(255, 255, 255) 0px 12px 13px, rgb(255, 255, 255) 0px -3px 5px;">
+              <h3 style="font-size: 28px; font-family:'Alegreya Sans', sans-serif;">Lomake</h3> 
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Sähköpostiosoite</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Emme koskaan jaa sähköpostiosoitettasi kenenkään muun kanssa.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Salasana</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Haluan ilmoituksen uusista projekteista!</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary" style="background-color: #2f144c;">Vahvista</button>
+
+                </form>
+            </div>
+          </form>
+        </div>
+      </aside>
+    </div>
+      
+      
+
+
+
+        <br><br><br><br><br>
+
+ 
+
+
+  </main>  
+    
+
+    <!-- FOOTER -->
+    <footer class="fixed-bottom">
+      <div class="row">
+        <div class="col-12">
+          <footer class="bg-black text-center text-lg-start" id="myFooter">
+              <div class="text-center p-3">
+              © 2023 Copyright: Pinja Lalla
+              </div>
+          </footer>
+        </div>
+      </div>
+    </footer>
+
+      
+       
+   <!-- BOOTSTRAP SCRIPT-->
+       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
+       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+    </body>
+    </html>
+    

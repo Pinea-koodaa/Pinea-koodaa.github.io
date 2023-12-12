@@ -1,0 +1,80 @@
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover; 
+  z-index: -1;
+}
+
+
+.carousel {
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.nav-item:hover {
+  transform: scale(1.05);
+
+}
+/* tämä vaikuttaa taustan väriin */
+body {
+  background-image: linear-gradient(black,white);
+    margin-top: 30px;
+  }
+  .card:hover {
+    transform: scale(1.1);
+  }
+  .card {
+    transition: transform 0.5s;
+    background-color: black;
+    margin: 10px;
+  }
+  
+ 
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2f144c;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+
+
+/* NAPPI */
+
+/*tää se kuuluisa media query tehtävän annon mukaan */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+#myFooter {
+    font-size: 14px; 
+    color: #ffffff; 
+    
+  }

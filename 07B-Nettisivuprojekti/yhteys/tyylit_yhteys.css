@@ -1,0 +1,281 @@
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* tyyli contact formia varten*/
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+/*loppu*/
+
+.nav-item:hover {
+  transform: scale(1.05);
+
+}
+
+
+body {
+    background-image: linear-gradient(black,white);
+    margin-top: 30px;
+  }
+  .card:hover {
+    transform: scale(1.1);
+  }
+  .card {
+    transition: transform 0.5s;
+    background-color: black;
+    margin: 10px;
+  }
+  
+ 
+
+  /* VAIHTUVA TEKSTI */
+  .rotating-text-wrapper {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .rotating-text-wrapper h2 {
+    
+    margin: 0;
+    
+    color: #fff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+  }
+  .rotating-text-wrapper h2:nth-child(1) {
+    background-color: rgb(0, 0, 0);
+    animation-name: rotating-text-1;
+  }
+  @keyframes rotating-text-1 {
+    0% {
+      transform: translateY(200%);
+    }
+    33% {
+      transform: translateY(100%);
+      opacity: 1;
+    }
+    34% {
+      opacity: 0;
+    }
+  }
+  .rotating-text-wrapper h2:nth-child(2) {
+    background-color: rgb(0, 0, 0);
+    animation-name: rotating-text-2;
+  }
+  @keyframes rotating-text-2 {
+    33% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    66% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    67% {
+      opacity: 0;
+    }
+  }
+  .rotating-text-wrapper h2:nth-child(3) {
+    background-color: rgb(0, 0, 0);
+    animation-name: rotating-text-3;
+  }
+  @keyframes rotating-text-3 {
+    66% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    99% {
+      transform: translateY(-100%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .rotating-text-wrapper {
+      font-size: 0.7rem;
+    }
+  }
+
+  
+
+
+
+
+
+
+/* LUE LISÄÄ */
+
+.box{
+    /* position: absolute;
+    left:50%;
+    transform: translate(-50%,-50%); */
+    background-color: #2f144c;
+    color:#eee;
+    padding:20px 40px;
+    margin: 40px;
+    /* font-family: monospace;
+    width:700px; */
+}
+.box input[name="readmore"]{
+    display: none;
+}
+.box h1{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.box h2{
+    font-size: 20px;
+}
+.box h3{
+    font-size: 17px;
+}
+.box .des{
+    text-align: justify;
+    position: relative;
+    overflow: hidden;
+    /* max-height: 150px; */
+    transition: 0.5s ease-in-out;
+}
+.box .des::before{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:50px;
+    transition: 0.5s ease-in-out;
+    content:'';
+    background-image: linear-gradient(to top, #2F144C, transparent);
+}
+.box .button{
+    margin-top:30px;
+    text-align: center;
+}
+.box label{
+    text-align: center;
+    display: inline-block;
+    border:1px solid #000;
+    width:140px;
+    height:50px;
+    position: relative;
+    cursor: pointer;
+}
+.box label::before{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    content:attr(data-more);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box input[name="readmore"]:checked ~ .content label::before{
+    content:attr(data-less);
+}
+.box input[name="readmore"]:checked ~ .content .des{
+    max-height: 300px;
+}
+.box input[name="readmore"]:checked ~ .content .des::before{
+    height: 0px;
+}
+.content{
+    position: relative;
+}
+.content::before{
+    position: absolute;
+    bottom:50px;
+    right:5px;
+    width:89px;
+    height: 94px;
+    content:'';
+    background-image: url(astronaut.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    transition: 2s ease-in-out;
+}
+.content::after{
+    position: absolute;
+    bottom:33px;
+    right:0px;
+    transform: translate(70%,50%);
+    width:200px;
+    height: 150px;
+    content:'';
+    background-image: url(vihreeplaneetta.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    transition: 2s ease-in-out;
+}
+.box input[name="readmore"]:checked ~ .content::before{
+    bottom:80%;
+    right:100%;
+    transform: rotate(-50deg);
+}
+.box input[name="readmore"]:checked ~ .content::after{
+    transform: translate(75%,55%) rotate(30deg);
+}
+
+
+
+
+
+
+
+
+
+/* NAPPI */
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+#myFooter {
+    font-size: 14px; 
+    color: #ffffff; 
+    
+  }
