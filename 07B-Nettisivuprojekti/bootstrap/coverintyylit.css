@@ -206,7 +206,7 @@ body {
 .content::after{
     position: absolute;
     bottom:33px;
-    right:0px;
+    right:25px;
     transform: translate(70%,50%);
     width:200px;
     height: 150px;
@@ -225,7 +225,15 @@ body {
 .box input[name="readmore"]:checked ~ .content::after{
     transform: translate(75%,55%) rotate(30deg);
 }
-
+@media (max-width: 600px) {
+  .box {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
 
 

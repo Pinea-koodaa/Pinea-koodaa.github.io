@@ -1,6 +1,6 @@
 html {
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: scroll; 
 }
 
 #myVideo {
@@ -13,19 +13,50 @@ html {
   z-index: -1;
 }
 
+/* Media query alle 1000px leveälle näytölle */
+@media (max-width: 1000px) {
+  .carousel-item img {
+    margin-top: 60px; /* Voit säätää marginaalin korkeuden sopivaksi */
+  }
+
+
+  .carousel-caption h2 {
+    font-size: 14px; /* Säädä fonttikokoa sopivaksi */
+  }
+
+  .carousel-caption p {
+    font-size: 14px; /* Säädä fonttikokoa sopivaksi */
+  }
+
+  .custom-btn {
+    font-size: 15px; /* Säädä nappulan fonttikokoa sopivaksi */
+    padding: 5px 8px; /* Säädä nappulan kokoa sopivaksi */
+  }
+}
+
+
+.custom-btn {
+  background-color: #2f144c;
+  color: white;
+}
+
+.custom-btn:hover {
+  background-color: gray; /* Harmaa väri hiiren ollessa päällä */
+}
+
 
 .carousel {
   position: relative;
   padding-bottom: 12px;
 }
 
-.nav-item:hover {
+.nav-link:hover {
   transform: scale(1.05);
 
 }
 /* tämä vaikuttaa taustan väriin */
 body {
-  background-image: linear-gradient(black,white);
+  background-color:black;
     margin-top: 30px;
   }
   .card:hover {
@@ -55,7 +86,7 @@ body {
 
 
 
-/* NAPPI */
+
 
 /*tää se kuuluisa media query tehtävän annon mukaan */
 @media only screen and (max-width: 600px) {
